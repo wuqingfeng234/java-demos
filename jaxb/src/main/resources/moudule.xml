@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module name='showcase' template='showcase.ftl'>
+    <resources>
+        <map name='css' type='static'>
+            <entries>
+                <entry label="text_a1" value="text_a1"></entry>
+                <entry label="text_a2" value="text_a2"></entry>
+                <entry label="text_a3" value="text_a3"></entry>
+                <entry label="text_c1" value="text_c1"></entry>
+                <entry label="text_c2" value="text_c2"></entry>
+            </entries>
+        </map>
+        <map name='status' type='ws' url="xxxx">
+        </map>
+        <map name='author' type='file' url="xxxx">
+        </map>
+    </resources>
+
+    <headerItems>
+        <field name='active1' type='checkbox' datasource='css'
+               multiple='false' />
+        <field name='title1' type='text' format="string" required="true"/>
+        <field name='radio11' type='radio' datasource='css'/>
+        <field name='url11' type='url' format="string"/>
+        <field name='dropdownlist111' type='select' datasource='css' multiple="true" height="80" width="100"/>
+        <field name='title22' type='textarea' width="200" height="100" spellCheck="true" format="string" required="true"/>
+    </headerItems>
+
+
+    <properties>
+        <field name='active12' type='checkbox' datasource='status'
+               multiple='false' />
+        <field name='title12' type='date' format="int" />
+        <field name='email11' type='email' visible="true" />
+
+    </properties>
+
+    <bodyItems>
+        <field label="Name" name="name" type="text" visible="false"
+               editable="false"></field>
+
+        <field name="readings_list" type="datatable" action="insert,remove">
+            <columns>
+                <field label="Title" name="rSource" type="text" visible="true" width="30"/>
+                <field label="URL" name="rURL" type="text" visible="true" width="40"/>
+                <field label="Date" name="rDate" type="text" visible="true" width="50"/>
+                <field label="Source" name="rSource" type="text" visible="true" width="60"/>
+            </columns>
+        </field>
+
+    </bodyItems>
+
+</module>
