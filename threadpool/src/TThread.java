@@ -19,6 +19,8 @@ public class TThread {
                 }
             };
             thread.start();
+
+
             try{
                 thread.join();
             } catch (InterruptedException e) {
