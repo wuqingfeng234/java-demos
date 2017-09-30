@@ -84,3 +84,5 @@ uploadfile/src/main/java/com/huawei/wuqf/service/
 uploadfile/src/main/java/com/huawei/wuqf/tools/
 uploadfile/src/main/java/com/wuqf/
 uploadfile/src/test/
+
+*.iml
