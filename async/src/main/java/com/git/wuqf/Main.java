@@ -1,3 +1,5 @@
+package com.git.wuqf;
+
 public class Main {
 
     public static void main(String[] args) {

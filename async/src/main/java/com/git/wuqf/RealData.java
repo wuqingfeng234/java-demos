@@ -1,3 +1,5 @@
+package com.git.wuqf;
+
 import java.util.Observable;
 
 /**
@@ -12,7 +14,7 @@ public class RealData extends Observable implements Data {
     }
 
     public void createRealData2(int count, char c) {
-        System.out.println("        making RealData(" + count + ", " + c
+        System.out.println("        making com.git.wuqf.RealData(" + count + ", " + c
                 + ") BEGIN");
         char[] buffer = new char[count];
         for (int i = 0; i < count; i++) {
@@ -22,7 +24,7 @@ public class RealData extends Observable implements Data {
             } catch (InterruptedException e) {
             }
         }
-        System.out.println("        making RealData(" + count + ", " + c
+        System.out.println("        making com.git.wuqf.RealData(" + count + ", " + c
                 + ") END");
         this.content = new String(buffer);
 

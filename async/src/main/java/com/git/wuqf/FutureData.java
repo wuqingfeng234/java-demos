@@ -1,3 +1,5 @@
+package com.git.wuqf;
+
 import java.util.Observable;
 import java.util.Observer;
 
