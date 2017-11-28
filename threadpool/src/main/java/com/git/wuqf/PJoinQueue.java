@@ -1,3 +1,5 @@
+package com.git.wuqf;
+
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;

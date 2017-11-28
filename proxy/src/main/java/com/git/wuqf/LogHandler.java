@@ -1,3 +1,5 @@
+package com.git.wuqf;
+
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
@@ -6,19 +8,23 @@ import java.lang.reflect.Method;
  */
 public class LogHandler implements InvocationHandler {
     Object object;
-    LogHandler(Object object){
-        this.object=object;
+
+    LogHandler(Object object) {
+        this.object = object;
     }
+
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         this.doBefore();
-        Object o=method.invoke(object,args);
+        Object o = method.invoke(object, args);
         this.doAfter();
         return o;
     }
-    public void doBefore(){
+
+    public void doBefore() {
         System.out.println("do this before");
     }
-    public void doAfter(){
+
+    public void doAfter() {
         System.out.println("do this after");
     }
 }

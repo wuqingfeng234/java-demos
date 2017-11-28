@@ -1,3 +1,5 @@
+package com.git.wuqf;
+
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
@@ -21,13 +23,13 @@ public class TThread {
             thread.start();
 
 
-            try{
+            try {
                 thread.join();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        System.out.println(System.currentTimeMillis()-startTime);
+        System.out.println(System.currentTimeMillis() - startTime);
         System.out.println(l.size());
     }
 }
