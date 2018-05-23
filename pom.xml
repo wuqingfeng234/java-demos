@@ -17,6 +17,7 @@
         <module>stream</module>
         <module>threadpool</module>
         <module>uploadfile</module>
+        <module>threanlocal</module>
     </modules>
     <build>
         <plugins>
