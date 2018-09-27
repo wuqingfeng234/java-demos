@@ -1,4 +1,4 @@
-package com.git.wuqf;
+package com.git.wuqf.proxy.designpattern;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

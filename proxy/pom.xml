@@ -3,7 +3,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.huawei.wuqf</groupId>
+    <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
+    <modules>
+        <module>jdk-proxy</module>
+        <module>cglib-proxy</module>
+        <module>aspectj-proxy</module>
+        <module>proxy-design-pattern</module>
+        <module>spring-proxy</module>
+    </modules>
     <artifactId>proxy</artifactId>
 
     <build>
