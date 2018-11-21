@@ -11,6 +11,7 @@ public class Main {
         HelloImpl hello = new HelloImpl();
         DynamicProxy dynamicProxy = new DynamicProxy(hello);
         Hello o = (Hello) Proxy.newProxyInstance(HelloImpl.class.getClassLoader(), HelloImpl.class.getInterfaces(), dynamicProxy);
-        o.sayHello("xx");
+        String xx = o.sayHello("xx");
+        System.out.println(xx);
     }
 }
