@@ -12,4 +12,11 @@
     <artifactId>cglib-proxy</artifactId>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.2.9</version>
+        </dependency>
+    </dependencies>
 </project>
