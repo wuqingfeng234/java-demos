@@ -9,7 +9,6 @@
 
     <modules>
         <module>async</module>
-        <!--<module>concurrent</module>-->
         <module>fileserver</module>
         <module>jaxb</module>
         <module>multi-thread</module>
@@ -18,6 +17,7 @@
         <module>threadpool</module>
         <module>uploadfile</module>
         <module>threanlocal</module>
+        <module>annotation</module>
     </modules>
     <build>
         <plugins>
