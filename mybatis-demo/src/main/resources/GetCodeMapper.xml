@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.huawei.wuqf.mybatis.demo.GetCodeDao">
+
+    <select id="isRecordToday"  resultType="java.lang.Integer" parameterType="java.lang.Integer">
+        SELECT (DATE_FORMAT(m_time,'%Y%m%d') = DATE_FORMAT(NOW(),'%Y%m%d'))  from sequence_code where `type` =#{type};
+    </select>
+
+    <update id="updateTodaySequenceCode">
+        UPDATE sequence_code SET seq = seq + increment , m_time = NOW() WHERE `type` = #{type};
+    </update>
+
+    <update id="updateOldSequenceCode" >
+        UPDATE sequence_code SET seq = 1 , m_time = NOW() WHERE `type` = #{type};
+    </update>
+
+    <select id="selectSequence"  resultType="java.lang.Integer" parameterType="java.lang.Integer">
+        SELECT seq  from sequence_code where `type` =#{type};
+    </select>
+
+</mapper>

@@ -18,6 +18,7 @@
         <module>uploadfile</module>
         <module>threanlocal</module>
         <module>annotation</module>
+        <module>mybatis-demo</module>
     </modules>
     <build>
         <plugins>
