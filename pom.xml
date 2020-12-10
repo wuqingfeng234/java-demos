@@ -4,7 +4,7 @@
 
     <groupId>com.huawei.wuqf</groupId>
     <version>0.0.1-SNAPSHOT</version>
-    <artifactId>java-demos</artifactId>
+    <artifactId>java-learning</artifactId>
     <packaging>pom</packaging>
 
     <modules>
